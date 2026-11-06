@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Concorra a um MacBook Neo com a sua nota do ENEM." />
+    <meta name="theme-color" content="#073b3a" />
+    <title>ENEM 2026 | Ulbra</title>
+    <link rel="icon" href="assets/enem-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Ulbra — voltar ao início"><img src="assets/logo.png" alt="Ulbra" /></a>
+      <img class="enem-mark" src="assets/enem-logo.png" alt="ENEM 2026" />
+      <a class="header-button" href="#formulario">INSCREVA-SE</a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <h1>ESSE MACBOOK NEO<br />PODE SER <em>SEU!</em></h1>
+          <p class="hero-lead">Preencha o formulário e concorra com a sua nota do ENEM.</p>
+          <ul class="hero-points">
+            <li><span>✓</span> A melhor nota leva o MacBook Neo pra casa!</li>
+            <li><span>✓</span> A segunda melhor nota ganha uma bolsa de 100% no primeiro semestre (exceto Medicina).</li>
+          </ul>
+          <a class="button button-gold" href="#formulario">QUERO GANHAR O MACBOOK NEO</a>
+        </div>
+        <div class="hero-visual" role="img" aria-label="Jovem com MacBook Neo em um parque">
+          <div class="hero-stamp"><strong>1º</strong><span>LUGAR</span><small>MACBOOK NEO</small></div>
+        </div>
+      </section>
+
+      <section class="campaign">
+        <div class="campaign-intro">
+          <div class="section-label">01 — PREMIAÇÃO</div>
+          <div class="campaign-title">
+            <h2>SUA NOTA DO ENEM<br />PODE VALER <span>UM MACBOOK NEO</span></h2>
+            <p>Para participar, é só preencher o formulário aqui embaixo. Entre todas as pessoas que se inscreverem, as duas melhores notas do ENEM serão premiadas.</p>
+          </div>
+        </div>
+
+        <div class="prize-list">
+          <article class="prize-row">
+            <div class="place">1º <small>LUGAR</small></div>
+            <div class="prize-line"></div>
+            <p>quem tiver a melhor nota leva pra casa um MacBook Neo. Vale para todos os cursos.</p>
+          </article>
+          <article class="prize-row">
+            <div class="place">2º <small>LUGAR</small></div>
+            <div class="prize-line"></div>
+            <p>quem tiver a segunda melhor nota ganha uma bolsa da Ulbra de 100% no primeiro semestre, em todos os cursos, exceto Medicina.</p>
+          </article>
+        </div>
+
+        <div class="conversion" id="formulario">
+          <div class="conversion-copy">
+            <span class="conversion-kicker">A SUA NOTA PODE MUDAR TUDO</span>
+            <h2>ALGUÉM VAI LEVAR ESSE MACBOOK NEO PRA CASA.<br /><em>PODE SER VOCÊ.</em></h2>
+            <p>Você não paga nada para participar e leva poucos minutos para responder. Preencha o formulário acima e concorra com a sua nota do ENEM.</p>
+            <div class="conversion-proof">
+              <span>✓</span><p>Inscrição gratuita</p>
+              <span>✓</span><p>Leva poucos minutos</p>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <div class="form-card-topline"></div>
+            <div class="form-card-heading">
+              <span>INSCRIÇÃO</span>
+              <h2>FORMULÁRIO PADRÃO ULBRA</h2>
+            </div>
+            <div class="form-progress" aria-hidden="true"><span></span></div>
+            <form class="enrollment-form step-form" id="enrollment-form" novalidate>
+              <section class="form-step" data-step="0">
+                <span class="step-counter">01 / 03</span>
+                <label class="step-question" for="nome">Qual é o seu nome?</label>
+                <input class="step-input" id="nome" name="nome" type="text" autocomplete="name" placeholder="Digite seu nome completo" minlength="2" required />
+                <button class="button step-button" type="button" data-next>CONTINUAR</button>
+              </section>
+              <section class="form-step" data-step="1" hidden>
+                <span class="step-counter">02 / 03</span>
+                <label class="step-question" for="telefone">Qual é o seu telefone?</label>
+                <input class="step-input" id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000" required />
+                <button class="button step-button" type="button" data-next>CONTINUAR</button>
+                <button class="step-back" type="button" data-back>VOLTAR</button>
+              </section>
+              <section class="form-step" data-step="2" hidden>
+                <span class="step-counter">03 / 03</span>
+                <label class="step-question" for="curso-sonhos">Qual é o seu curso dos sonhos e por quê?</label>
+                <textarea class="step-input step-textarea" id="curso-sonhos" name="curso_sonhos" rows="4" minlength="5" placeholder="Conte para a gente" required></textarea>
+                <button class="button step-button" type="submit">ENVIAR RESPOSTA</button>
+                <button class="step-back" type="button" data-back>VOLTAR</button>
+              </section>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+            <div class="form-success" tabindex="-1" hidden>
+              <span class="success-icon" aria-hidden="true">✓</span>
+              <span class="success-kicker">INSCRIÇÃO CONCLUÍDA</span>
+              <h2>RECEBEMOS A SUA RESPOSTA!</h2>
+              <p>Enquanto aguardamos os resultados, você também pode usar a sua nota do ENEM para entrar na Ulbra. Fale com a nossa equipe e veja como funciona no curso que você escolheu.</p>
+              <button class="button button-team" type="button">FALAR COM A EQUIPE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="about">
+          <div class="about-image" role="img" aria-label="Vista aérea do campus da Ulbra com lago e montanhas"></div>
+          <div class="about-copy">
+            <div class="section-label">02 — INSTITUIÇÃO</div>
+            <h2>SOBRE A ULBRA</h2>
+            <p>A Ulbra é uma instituição com mais de 50 anos de história. Nesse tempo, mais de 500 mil pessoas se formaram aqui.</p>
+            <p>Hoje são 12 unidades no Rio Grande do Sul, no Tocantins, no Amazonas, no Pará e em Goiás. Na Ulbra, levamos a prática a sério, por isso você coloca a mão na massa desde o primeiro semestre na maioria dos cursos.</p>
+            <a class="text-link" href="#formulario">QUERO ME INSCREVER</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a class="mobile-cta" href="#formulario">INSCREVA-SE AGORA</a>
+    <footer><img src="assets/logo.png" alt="Ulbra" /><span>ENEM 2026</span><img src="assets/enem-logo.png" alt="ENEM 2026" /></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
